@@ -1,0 +1,249 @@
+@font-face {
+    font-family: Ailerons;
+    src: url("Ailerons-Typeface.otf") format("opentype");
+}
+
+.navbar {
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 1px solid #ded3d3;
+}
+
+.nav-item a {
+    border: 1px solid transparent;
+    color: black;
+}
+
+    .nav-item a:focus {
+        border-color: black;
+        background-color: transparent;
+    }
+
+    .nav-item a:hover {
+        border-color: transparent;
+        color: white;
+    }
+
+.navbar i {
+    font-size: 30px;
+}
+
+#socialMedia {
+    list-style-type: none;
+    margin: 0;
+}
+
+    #socialMedia li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    #socialMedia a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+.masthead {
+    margin-top: 60px;
+    background-image: url(../img/mainlogo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 1000px;
+    padding-top: 780px;
+}
+
+@media only screen and (max-width: 500px) {
+    .masthead {
+        margin-top: 60px;
+        background-image: url(../img/mainLogoSmall.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 600px;
+        padding-top: 400px;
+    }
+}
+
+#helpYourShoes a {
+    font-family: 'Ailerons', serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 25px;
+}
+
+    #helpYourShoes a:hover {
+        font-family: 'Ailerons', serif;
+        text-decoration: none;
+        color: black;
+        background-color: white;
+        border: 1px solid white;
+        padding: 10px;
+        font-size: 25px;
+    }
+
+#helpYourShoesArrow {
+    margin-top: 10px;
+}
+
+#helpYourShoesArrow a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.about-header {
+    height: 200px;
+    background-image: url(../img/About01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#aboutheadertext {
+    padding-top: 140px;
+    color: #676666;
+}
+
+.about-description-header {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.about-description .row {
+    padding: 10px;
+}
+
+.about-description span {
+    color: #ffc107;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 5px;
+    border-right: 2px solid;
+}
+
+#portfolio {
+    padding-top: 20px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+    #portfolio .col-sm-6 {
+        padding: 1px;
+    }
+
+.price-header {
+    margin-top: 80px;
+    height: 100px;
+    background-image: url(../img/navbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.price-content {
+    margin-top: 80px;
+}
+
+    .price-content ul {
+        list-style-type: none;
+        float: right;
+    }
+
+        .price-content ul li {
+            display: inline;
+        }
+
+            .price-content ul li i {
+                color: rgb(230, 225, 142);
+            }
+
+.price-details {
+    background-image: url(../img/navbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 300px;
+}
+
+.price-caption {
+    text-transform: uppercase;
+}
+
+#contact {
+    margin-top: 80px;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    background-image: url(../img/Fon_contats.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: antiquewhite;
+}
+
+#contactForm {
+    margin-top: 30px;
+}
+
+#carouselListBox {
+    text-align: -webkit-center;
+    background-color: gainsboro;
+}
+
+/*------------------------------------------------------------------*/
+
+.multi-item-carousel .carousel-inner > .item {
+    transition: 500ms ease-in-out left;
+}
+
+.multi-item-carousel .carousel-inner .active.left {
+    left: -33%;
+}
+
+.multi-item-carousel .carousel-inner .active.right {
+    left: 33%;
+}
+
+.multi-item-carousel .carousel-inner .next {
+    left: 33%;
+}
+
+.multi-item-carousel .carousel-inner .prev {
+    left: -33%;
+}
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .multi-item-carousel .carousel-inner > .item {
+        transition: 500ms ease-in-out left;
+        transition: 500ms ease-in-out all;
+        backface-visibility: visible;
+        transform: none !important;
+    }
+}
+
+.multi-item-carousel .carouse-control.left,
+.multi-item-carousel .carouse-control.right {
+    background-image: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: white;
+    color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-shadow: 0px 2px 0px #000000;
+}
