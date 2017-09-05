@@ -1,6 +1,6 @@
 ﻿(function () {
 
-    $('[data-toggle="tooltip"]').tooltip(); 
+  $('[data-toggle="tooltip"]').tooltip();
 
   //provide smooth transition between sections
   $('a[href*=\\#]').on('click', function (event) {
@@ -90,11 +90,41 @@
 
   //change photo background on hover
 
-  $("#helpYourShoesLink").mouseenter(function () {
-    $(".masthead").css("background-image", "url(././img/mainLogoLight.jpg)");
-  }).mouseleave(function() {
-    $(".masthead").css("background-image", "url(././img/mainlogo.jpg)");
-  });
+  var touch = 'ontouchstart' in document.documentElement
+    || navigator.maxTouchPoints > 0
+    || navigator.msMaxTouchPoints > 0;
 
-  
+  if (!touch) {
+    $("#helpYourShoesLink").mouseenter(function () {
+      $(".masthead").css("background-image", "url(././img/mainLogoLight.jpg)");
+    }).mouseleave(function () {
+      $(".masthead").css("background-image", "url(././img/mainlogo.jpg)");
+    });
+  }
+
+
+  //collapse menu on click
+  $('.navbar-collapse a').on('click', function () {
+        $('.btn-navbar').click(); //bootstrap 2.x
+        $('.navbar-toggler').click() //bootstrap 3.x by Richard
+    });
 })();
+
+
+//scroll top button
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}

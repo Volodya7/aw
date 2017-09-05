@@ -90,12 +90,12 @@
     margin-top: 10px;
 }
 
-#helpYourShoesArrow a {
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    margin-top: 10px;
-}
+    #helpYourShoesArrow a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        margin-top: 10px;
+    }
 
 .about-header {
     height: 200px;
@@ -246,4 +246,22 @@ h1 {
     margin-top: 1em;
     margin-bottom: 2em;
     text-shadow: 0px 2px 0px #000000;
+}
+
+
+.go-home-button {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+}
+
+    .go-home-button button {
+        background-color: #f1e8d8;
+        color: #0c0c0c;
+        z-index: 1000000;
+        border-color: #bfbfbf;
+    }
+
+.owl-carousel {
+    z-index: 0;   
 }
