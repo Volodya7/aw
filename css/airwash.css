@@ -67,6 +67,18 @@
     }
 }
 
+@media only screen and (max-width: 700px) {
+    .contact-logo {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    /*.contact-button {
+        display: none;
+    }*/
+}
+
 #helpYourShoes a {
     font-family: 'Ailerons', serif;
     text-decoration: none;
@@ -136,46 +148,6 @@
     #portfolio .col-sm-6 {
         padding: 1px;
     }
-
-.price-header {
-    margin-top: 80px;
-    height: 100px;
-    background-image: url(../img/navbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding-top: 30px;
-    text-transform: uppercase;
-}
-
-.price-content {
-    margin-top: 80px;
-}
-
-    .price-content ul {
-        list-style-type: none;
-        float: right;
-    }
-
-        .price-content ul li {
-            display: inline;
-        }
-
-            .price-content ul li i {
-                color: rgb(230, 225, 142);
-            }
-
-.price-details {
-    background-image: url(../img/navbg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 300px;
-}
-
-.price-caption {
-    text-transform: uppercase;
-}
 
 #contact {
     margin-top: 80px;
@@ -264,4 +236,186 @@ h1 {
 
 .owl-carousel {
     z-index: 0;   
+}
+
+
+
+#contact .value-label {
+    vertical-align: sub;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#contact .icon-button {
+    font-size: 26px;
+    background-color: #fcd8a9;
+    width: 60px;
+    color: #000000;
+}
+
+.messenger-icon {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54.83 55.1"><path class="cls-1" style="fill:#437bbd" d="M0,26.27q0-.76,0-1.52c0-.2.07-.39.1-.59.2-1.38.28-2.79.6-4.14A24.73,24.73,0,0,1,11,5.08a28.26,28.26,0,0,1,19.18-5,27.59,27.59,0,0,1,5.84,1.15A26.92,26.92,0,0,1,49.35,10.2,23.86,23.86,0,0,1,54.8,26.85a22.48,22.48,0,0,1-.66,4.44,24.86,24.86,0,0,1-9.42,14A28.17,28.17,0,0,1,25.66,51a29.58,29.58,0,0,1-5.77-.91.9.9,0,0,0-.6.07C17,51.41,14.63,52.7,12.3,54l-2,1.12v-.44c0-3,0-5.91,0-8.87a.7.7,0,0,0-.31-.63,25.67,25.67,0,0,1-6.07-6.6A23.77,23.77,0,0,1,.09,26.78,4,4,0,0,0,0,26.27Zm45-7.76L45,18.44l-.32.15-12.6,7a.43.43,0,0,1-.63-.08q-2.89-3.06-5.8-6.09c-.36-.37-.74-.71-1.14-1.09L9.65,34.22l.07.09.72-.38q6.19-3.4,12.37-6.81a.44.44,0,0,1,.66.12c.41.47.84.91,1.26,1.36q2.59,2.79,5.18,5.58c.2.22.32.21.5,0s.6-.65.9-1l13.13-14C44.66,19,44.85,18.73,45,18.51Z"/></svg>') no-repeat;
+}
+
+.price-header {
+    margin-top: 80px;
+    height: 100px;
+    background-image: url(../img/navbg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 30px;
+    text-transform: uppercase;
+}
+
+.price-content {
+    margin-top: 80px;
+}
+
+.price-caption {
+    text-transform: uppercase;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    color: #535353;
+}
+
+
+#classicPackContainer {
+    border: solid 1px white;
+    color: #535353;
+}
+
+#classicPackContainer .classic-pack-container-header {
+    background-image: url(../img/classicPack/classicPackHeader.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#classicPackContainer .classic-pack-container-content {
+    background-image: url(../img/classicPack/classicPackContent.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 530px;
+}
+
+#classicPackContainer .classic-pack-container-footer {
+    background-image: url(../img/classicPack/classicPackFooter.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#premiumPackContainer {
+    border: solid 1px white;
+    color: #535353;
+}
+
+    #premiumPackContainer .premium-pack-container-header {
+        background-image: url(../img/premiumPack/premiumPackHeader.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #premiumPackContainer .premium-pack-container-content {
+        background-image: url(../img/premiumPack/premiumPackContent.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 530px;
+    }
+
+    #premiumPackContainer .premium-pack-container-footer {
+        background-image: url(../img/premiumPack/premiumPackFooter.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+#winterPackContainer {
+    border: solid 1px white;
+    color: #535353;
+}
+
+    #winterPackContainer .winter-pack-container-header {
+        background-image: url(../img/winterPack/winterPackHeader.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #winterPackContainer .winter-pack-container-content {
+        background-image: url(../img/winterPack/winterPackContent.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 530px;
+    }
+
+    #winterPackContainer .winter-pack-container-footer {
+        background-image: url(../img/winterPack/winterPackFooter.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+#kidsPackContainer {
+    border: solid 1px white;
+    color: #535353;
+}
+
+    #kidsPackContainer .kids-pack-container-header {
+        background-image: url(../img/kidsPack/kidsPackHeader.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #kidsPackContainer .kids-pack-container-content {
+        background-image: url(../img/kidsPack/kidsPackContent.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height: 530px;
+    }
+
+    #kidsPackContainer .kids-pack-container-footer {
+        background-image: url(../img/kidsPack/kidsPackFooter.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+.price-details-paragraph1 {
+    text-transform: uppercase;
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.price-details-paragraph2 {
+    font-weight: bold;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.price-details-paragraph3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.price-details-list {
+    margin-top: 10px;
+    margin-bottom: 55px;
+}
+
+.price-details-price {
+    font-weight: bold;
+    font-size: 30px;
 }
