@@ -72,7 +72,7 @@
         display: none;
     }
 
-    .contact-button {
+    .contact-button-big {
         display: none;
     }
 }
@@ -86,6 +86,11 @@
     font-size: 25px;
 }
 
+@media only screen and (min-width: 700px) {
+    .contact-button-small {
+        display: none;
+    }
+
     #helpYourShoes a:hover {
         font-family: 'Ailerons', serif;
         text-decoration: none;
@@ -95,6 +100,7 @@
         padding: 10px;
         font-size: 25px;
     }
+}
 
 #helpYourShoesArrow {
     margin-top: 10px;
@@ -151,10 +157,7 @@
     margin-top: 80px;
     padding-top: 50px;
     padding-bottom: 80px;
-    background-image: url(../img/Fon_contats.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background-color: black;
     color: antiquewhite;
 }
 
@@ -263,12 +266,12 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    padding-top: 30px;
+    padding-top: 35px;
     text-transform: uppercase;
 }
 
 .price-content {
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 .price-caption {
@@ -276,12 +279,14 @@ h1 {
     margin-top: 24px;
     margin-bottom: 20px;
     color: #535353;
+    font-size: 30px;
 }
 
 
 #classicPackContainer {
     border: solid 1px white;
     color: #535353;
+    margin-top: 25px;
 }
 
 #classicPackContainer .classic-pack-container-header {
@@ -309,6 +314,7 @@ h1 {
 #premiumPackContainer {
     border: solid 1px white;
     color: #535353;
+    margin-top: 25px;
 }
 
     #premiumPackContainer .premium-pack-container-header {
@@ -336,6 +342,7 @@ h1 {
 #winterPackContainer {
     border: solid 1px white;
     color: #535353;
+    margin-top: 25px;
 }
 
     #winterPackContainer .winter-pack-container-header {
@@ -363,6 +370,7 @@ h1 {
 #kidsPackContainer {
     border: solid 1px white;
     color: #535353;
+    margin-top: 25px;
 }
 
     #kidsPackContainer .kids-pack-container-header {
@@ -416,4 +424,5 @@ h1 {
 .price-details-price {
     font-weight: bold;
     font-size: 30px;
+    margin-top: 10px;
 }
